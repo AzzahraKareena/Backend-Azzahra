@@ -13,6 +13,7 @@
                 <th>ID</th>
                 <th>Nama Product</th>
                 <th>Deskripsi</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,10 @@
                 <td><?=$p->id?></td>
                 <td><?=$p->nama_product?></td>
                 <td><?=$p->description?></td>
+                <td>
+                    <a href="<?=base_url('edit-product/'.$p->id)?>">Edit</a>
+                    <a href="<?=base_url('delete-product/'.$p->id)?>">Hapus</a>
+                </td>
             </tr>
             <?php endforeach?>
         </tbody>
