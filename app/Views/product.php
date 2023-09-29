@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Data Products</h1>
+    <button> <a href="/insertproducts"> Masukkan Produk </a></button>
     <table border="1" cellpadding ="10">
         <thead>
             <tr>
