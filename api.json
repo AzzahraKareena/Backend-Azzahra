@@ -1,0 +1,10 @@
+{
+    "code" : 200,
+    "status" : "OK",
+    "array" : [
+        {
+            "nama" : "Rena",
+            "tanggal" : 20
+        }
+    ]
+}
