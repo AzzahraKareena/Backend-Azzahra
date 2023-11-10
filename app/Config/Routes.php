@@ -13,8 +13,10 @@ $routes->get('edit-product/(:any)', 'ProductController::getProduct/$1');
 $routes->post('update-product/(:any)', 'ProductController::updateProduct/$1');
 $routes->get('delete-product/(:any)', 'ProductController::deleteProduct/$1');
 
-$routes->group('api', function($routes){
+$routes->group('api', function ($routes) {
     $routes->get('products', 'ProductController::readProductsApi');
     $routes->get('product/(:any)', 'ProductController::getProductApi/$1');
+    $routes->post('insert-product', 'ProductController::insertProductAPI');
+    $routes->put('update-product/(:num)', 'ProductController::updateProductAPI/$1');
 });
 
